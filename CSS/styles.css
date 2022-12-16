@@ -1,0 +1,332 @@
+body{
+    font-family: monospace; margin: 0;
+  }
+  
+  .header{
+    padding: 1px;
+    text-align: center;
+    background-color: #4c3228;
+    color: white;
+    font-size: 30px;
+  }
+  img{
+    width: 10%;
+    height: 10%;
+  }
+  
+  nav{
+    background-color: #6a4a3a;
+  }
+  
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    flex-direction: row;
+  }
+  
+  li{
+    display: inline-block;
+    width: 80px;
+    border: 2px solid #6a4a3a;
+    line-height: 3em;
+  }
+  
+  a{
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+  }
+  
+  li a:hover{
+    background-color:#bca89f;
+  }
+   
+	.slideshow{
+    background-color: #4c3228;
+    display: block;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+	}
+  .cycle-slideshow img{
+    width: 100%;
+    height: 100%;
+  }
+ 
+  
+  .menubox{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    background-color:#6a4a3a;
+    padding: 20px;
+    width: 96.8%;
+    height: 360px;
+  }
+  
+  .menu1 img, .menu2 img{
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .gridimage{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+  }
+  .gridimage img{
+    display: inline-block;
+    border-radius: 30%;
+    padding: 10px;
+  }
+  
+  .aboutheader{
+    text-align: center;
+    font-size: 23px;
+    color: white;
+    width: 100%;
+    background-color: #e5d3b3;
+}
+
+.abouttext{
+    font-size: 20px;
+    color: #6a4a3a;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.familychewy img{
+    display: block;
+    border-radius: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: #4c3228;
+}
+
+.chewyabout{
+    font-size: 20px;
+    color: #6a4a3a;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+}
+.menuheader{
+  text-align: center;
+  font-size: 23px;
+  color: white;
+  width: 100%;
+  background-color: #e5d3b3;
+}
+  
+.milkheader{
+  text-align: center;
+  font-size: 19px;
+  padding-left: 5px;
+  color: #6a4a3a;
+}
+
+.milkmenu{
+  text-align: center;
+  color: #6a4a3a;
+  font-size: 20px;
+}
+
+.fruitheader{
+  text-align: center;
+  font-size: 22px;
+  padding-left: 5px;
+  color: #6a4a3a;
+}
+
+.fruitmenu{
+  text-align: center;
+  color: #6a4a3a;
+  font-size: 20px;
+}
+
+.toppingsheader{
+  text-align: center;
+  font-size: 26px;
+  padding-left: 5px;
+  color: #6a4a3a;
+}
+
+.toppings{
+  text-align: center;
+  color: #6a4a3a;
+  font-size: 20px;
+}
+
+.bobashop{
+  position: relative;
+  text-align: center;
+  background-color:#e5d3b3;
+;
+}
+
+.text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 40px;  
+  transform: translate(-50%, -50%);
+  color: #4c3228;
+
+}
+
+b:hover{
+  background-color:#bca89f;
+}
+
+.bobashop img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10%;
+}
+
+.contactheader{
+  text-align: center;
+  font-size: 23px;
+  color: white;
+  width: 100%;
+  background-color: #e5d3b3;
+}
+
+.info{
+    text-align: center;
+    color: #6a4a3a;
+    font-size: 20px;
+}
+
+.socials img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+  footer{
+    background: #4c3228;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  .lefttext{
+    float: left;
+    color: white;
+  }
+  
+  .righttext{
+    float: right;
+    color: white;
+  }
+  
+  #ct{
+    float: left;
+    margin: 0 15px 0 0;
+    width: 20%;
+    height: 20%;
+  }
+
+/* Media Queries */
+
+/* header and nav changes, removed right testimony from footer */
+  @media screen and (min-width: 400px) and (max-width: 850px) {
+    .header{
+      font-size: 20px;
+    }
+    img{
+      display: none;
+    }
+    ul{
+      flex-direction: column;
+    }
+    li{
+      width: 100%;
+    }
+    .slideshow{
+      width: 70%;
+    }
+
+    .menu1 img, .menu2 img{
+      width: 20%;
+    }
+    .righttext{
+      display: none;
+    }
+  }
+
+/* menu changes, removed left testimony from footer*/
+  @media screen and (min-width: 850px) and (max-width: 1200px) {
+    .milkmenu{
+      text-align: left;
+      font-size: 25px;
+      background-color: beige;
+    }
+    .fruitheader{
+      background-color: #4c3228;
+      color: white;
+
+    }
+    .fruitmenu{
+      text-align: right;
+      font-size: 25px;
+      background-color: beige;
+    }
+    .toppingsheader{
+      background-color: #4c3228;
+      color: white;
+
+    }
+    .toppings{
+      text-align: left;
+      font-size: 25px;
+      background-color: beige;
+    }
+    .lefttext{
+      display: none;
+    }
+  }
+
+  /* web page colors are switched */
+  @media screen and (min-width: 850px) and (max-width: 1200px) {
+    .header{
+      background-color: #6a4a3a;
+    }
+    nav{
+      background-color: #4c3228;
+    }
+    li{
+      border: 2px solid #4c3228;
+    }
+    .slideshow{
+      background-color: #6a4a3a;
+    }
+    .menubox{
+      background-color: #4c3228;
+    }
+    footer{
+      background-color: #6a4a3a;
+    }
+    .menuheader{
+      color: #4c3228;
+    }
+    .milkheader{
+      background-color:#4c3228;
+      color: white;
+    }
+  }
